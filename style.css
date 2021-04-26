@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(60deg, darkcyan 50%, coral 50.1%);
+  overflow: hidden;
+  perspective: 2000px;
+}
+
+.container {
+  transform-style: preserve-3d;
+  border-radius: 30px;
+  background: #333;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+}
+
+.container .card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .card-container .card {
+  height: 350px;
+  width: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.9);
+  border: 4px solid #fff;
+}
+
+.container .card-container .card .background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  filter: blur(2.5px);
+}
+
+.container .card-container .card .girl {
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+}
